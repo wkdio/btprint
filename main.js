@@ -14,6 +14,10 @@ function createWindow () {
   })
 
   win.loadFile('index.html')
+
+  mainWindow.once('ready-to-show', () => {
+    autoUpdater.checkForUpdatesAndNotify();
+  });
 }
 
 const gotTheLock = app.requestSingleInstanceLock()
