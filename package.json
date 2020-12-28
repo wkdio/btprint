@@ -3,6 +3,9 @@
   "version": "0.0.3",
   "description": "BT Printing Application",
   "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
   "author": "wkd.io",
   "license": "ISC",
   "devDependencies": {
@@ -10,6 +13,7 @@
     "electron-builder": "^22.9.1"
   },
   "dependencies": {
+    "auto-launch": "^5.0.5",
     "electron-squirrel-startup": "^1.0.0",
     "electron-updater": "^4.3.5"
   },
@@ -17,6 +21,9 @@
     "appId": "io.wkd.btprint",
     "mac": {
       "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": "nsis"
     }
   },
   "repository": "https://github.com/wkdio/btprint"
