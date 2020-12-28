@@ -1,6 +1,6 @@
 const { app, BrowserWindow } = require('electron')
 const { autoUpdater } = require("electron-updater")
-const AutoLaunch = require('auto-launch');
+const AutoLaunch = require('auto-launch')
 
 let myWindow = null
 
@@ -34,12 +34,12 @@ if (!gotTheLock) {
       let autoLaunch = new AutoLaunch({
         name: 'btprint',
         path: app.getPath('exe'),
-      });
+      })
       autoLaunch.isEnabled().then((isEnabled) => {
         if (!isEnabled) autoLaunch.enable();
-      });
-    })
-  }
+      })
+    }
+  })
 
   // Create myWindow, load the rest of the app, etc...
   app.whenReady().then(() => {
@@ -48,9 +48,7 @@ if (!gotTheLock) {
 }
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit()
-  }
+  app.quit()
 })
 
 app.on('activate', () => {
