@@ -1,6 +1,6 @@
 {
   "name": "btprint",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "BT Printing Application",
   "main": "main.js",
   "scripts": {
