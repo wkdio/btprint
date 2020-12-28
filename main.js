@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, Menu } = require('electron')
 const { autoUpdater } = require("electron-updater")
 const AutoLaunch = require('auto-launch')
 
@@ -56,3 +56,5 @@ app.on('activate', () => {
     createWindow()
   }
 })
+
+Menu.setApplicationMenu(new Menu());
