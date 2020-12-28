@@ -1,6 +1,6 @@
 {
   "name": "btprint",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "BT Printing Application",
   "main": "main.js",
   "scripts": {
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "auto-launch": "^5.0.5",
+    "electron-log": "^4.3.1",
     "electron-squirrel-startup": "^1.0.0",
     "electron-updater": "^4.3.5"
   },
