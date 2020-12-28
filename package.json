@@ -1,0 +1,22 @@
+{
+  "name": "btprint",
+  "version": "0.0.1",
+  "description": "BT Printing Application",
+  "main": "main.js",
+  "author": "wkd.io",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.1.1",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "build": {
+    "appId": "io.wkd.btprint",
+    "mac": {
+      "category": "public.app-category.utilities"
+    }
+  },
+  "repository": "https://github.com/wkdio/btprint"
+}
