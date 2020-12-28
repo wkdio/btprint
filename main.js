@@ -15,9 +15,7 @@ function createWindow () {
 
   win.loadFile('index.html')
 
-  mainWindow.once('ready-to-show', () => {
-    autoUpdater.checkForUpdatesAndNotify();
-  });
+  autoUpdater.checkForUpdatesAndNotify();
 }
 
 const gotTheLock = app.requestSingleInstanceLock()
@@ -62,3 +60,6 @@ app.on('activate', () => {
 })
 
 Menu.setApplicationMenu(new Menu());
+
+autoUpdater.logger = require("electron-log")
+autoUpdater.logger.transports.file.level = "info"
