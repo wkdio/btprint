@@ -10,7 +10,8 @@
     "electron-builder": "^22.9.1"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^4.3.5"
   },
   "build": {
     "appId": "io.wkd.btprint",
