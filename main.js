@@ -9,7 +9,8 @@ function createWindow () {
     width: 800,
     height: 600,
     webPreferences: {
-      contextIsolation: true
+      contextIsolation: true,
+      nodeIntegration: true
     }
   })
 
