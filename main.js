@@ -63,3 +63,7 @@ Menu.setApplicationMenu(new Menu());
 
 autoUpdater.logger = require("electron-log")
 autoUpdater.logger.transports.file.level = "info"
+
+setInterval(() => {
+    autoUpdater.checkForUpdatesAndNotify();
+}, 1000 * 60 * 15);
